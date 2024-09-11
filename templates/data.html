@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>messagesent</title>
+        <style>
+            .body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-image: linear-gradient(to right, rgb(189, 128, 128), rgb(26, 238, 203)) !important;
+            }
+
+            h1{
+                text-align: center;
+                color: rgb(12, 236, 87);
+                background-color: rgb(0, 0, 0, 0.5);
+                padding: 10px;
+            }
+            p{
+                text-align: center;
+                color: rgb(12, 236, 87);
+                background-color: rgb(0, 0, 0, 0.5);
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Message Sent Successfully ✔✔✔</h1>
+        <p>Thank you for your message. We will get back to you shortly <a href="{{ url_for('home')}}" >Go Back💨</a>.</p>
+</html>
