@@ -39,11 +39,6 @@ def get_data():
         return render_template('data.html')
     return f"Name: {name}, Email: {email} \n\n Message: {message}" 
 
-
-
-
-
-   
     
  
 

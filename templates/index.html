@@ -13,6 +13,13 @@
             background-image: linear-gradient(to right, rgb(189, 128, 128), rgb(26, 238, 203));
         }
 
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right, rgb(189, 128, 128), rgb(26, 238, 203));
+        }
+
         h1{
             text-align: center;
             color: rgb(241, 12, 12);
@@ -47,7 +54,7 @@
 
     <p>Do you have a complaint? Please Drop them below, make sure to include your houses</p>
     <div class="form">
-        <form action="/data" method="post">
+        <form action="{{ url_for('get_data') }}" method="post">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" required placeholder="Please Input your Name"><br>
             <hr
@@ -60,7 +67,7 @@
             <label for="text">Your Message :</label>
             <textarea name="message" id="message" cols="20" rows="3" required placeholder="Please Enter your Message"></textarea><br>
             <hr>
-            <button type="submit">Submit</button>
+            <button type="submit" value="submit">Submit</button>
         </form>
     </div>
 </body>
